@@ -1,0 +1,71 @@
+/* default styling  */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* descendent class combinator */
+header h1{
+    font-weight: 400;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin:0 3rem;
+    
+
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+nav{
+    position: relative;
+    top: 1rem;
+    right: 2rem;
+    width: 20rem;
+} 
+.showcase_img{
+    width:95vw;
+    margin:1rem;
+}
+article{
+    display: flex;
+    margin: 1.5rem;
+}
+.cont{
+    margin:2rem;
+    text-align: center;
+    padding:1rem; 
+}
+footer{
+    background-color: black;
+    /* text-align: center; */
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+}  
+/* pseudo class */
+a:hover{
+    color: red;
+}
+    
+
+   
+
+
+
+
