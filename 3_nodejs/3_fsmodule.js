@@ -50,10 +50,36 @@ const file = require('fs')
 // file.mkdirSync('mydirectory')
 // console.log('directory created ')
 
-file.rmdirSync('mydirectory')
-console.log('directory deleted')
+// file.rmdirSync('mydirectory')
+// console.log('directory deleted')
 
 
+// to check whether a directory exits or not 
+
+// existSync
 
 
+// let doesExist = file.existsSync('mydirectory')
+// console.log(doesExist)
+
+// let doesExist1 = file.existsSync('f1.txt')
+// console.log(doesExist1)
+
+
+// statSync gives statics of directory
+// let stat = file.lstatSync('mydirectory')
+// console.log(stat)
+
+
+//return true or false for  file or folder 
+
+// console.log('is file' , stat.isFile())
+// console.log('isderectroy', stat.isDirectory())
+
+// read in directory 
+
+// let folderpath = 'C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectory'
+// let foldercontent = file.readdirSync(folderpath)
+// console.log("directroy content  " + foldercontent )
+console.log("directroy content  " + file.readdirSync('C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectory') )
 
