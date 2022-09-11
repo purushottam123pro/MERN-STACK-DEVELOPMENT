@@ -32,7 +32,7 @@ const file = require('fs')
 // appendfilesync method adds new data toa previously written file
 
 // file.appendFileSync('f2.txt',"add this in f2")
-// console.log('tsxt added in f2')
+// console.log('txt added in f2')
 
 
 // file.unlinkSync('f2.txt')
