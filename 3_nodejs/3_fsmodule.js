@@ -1,5 +1,6 @@
 // file system module 
 const file = require('fs')
+const path = require('path')
   
 
 // we will read write update and delete files
@@ -81,5 +82,23 @@ const file = require('fs')
 // let folderpath = 'C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectory'
 // let foldercontent = file.readdirSync(folderpath)
 // console.log("directroy content  " + foldercontent )
-console.log("directroy content  " + file.readdirSync('C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectory') )
+//console.log("directroy content  " + file.readdirSync('C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectory') )
+
+
+// copying files
+
+//src file, distination path 
+
+let srcfile  = "C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectory\\f1.txt"
+let destifile = "C:\\Users\\purus\\pepcoding practise\\DEV\\3_nodejs\\mydirectroy1"
+let tobecopiedfilename = path.basename(srcfile)
+// console.log(tobecopiedfilename)
+
+let despath = path.join(destifile , tobecopiedfilename)
+// console.log(despath)
+
+file.copyFileSync(srcfile ,despath)
+console.log('file copied')
+
+
 
